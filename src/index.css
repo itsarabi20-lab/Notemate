@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-bangla: 'Hind Siliguri', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-bangla);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .dark body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
+/* Strictly Red, White & Black Surfaces (Zero Grey Box) */
+.glass-surface {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(220, 38, 38, 0.08);
+}
+
+.dark .glass-surface {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px -15px rgba(220, 38, 38, 0.2);
+}
+
+.glass-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .glass-card {
+  background: #050505;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+}
+
+.glass-card:hover {
+  background: #ffffff;
+  border-color: #dc2626;
+  box-shadow: 0 20px 40px -12px rgba(220, 38, 38, 0.18);
+}
+
+.dark .glass-card:hover {
+  background: #0a0a0a;
+  border-color: #dc2626;
+  box-shadow: 0 20px 40px -12px rgba(220, 38, 38, 0.35);
+}
+
+.glass-input {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #000000;
+}
+
+.dark .glass-input {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.glass-input:focus {
+  border-color: #dc2626;
+  outline: none;
+}
+
+.glass-dropdown {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.dark .glass-dropdown {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Red & Black Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(220, 38, 38, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}

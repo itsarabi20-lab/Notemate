@@ -1,0 +1,6 @@
+{
+  "name": "নোটমেট - Student Notes Hub",
+  "description": "Free academic notes sharing and study resource platform. Submit notes, earn points, climb the leaderboard, and download freely.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
